@@ -120,6 +120,54 @@
 
   <main role="main">
     <div class="container">
+      <!-- AI Generator Section -->
+      <section class="ai-generator-panel" aria-label="AI-powered name generation">
+        <div class="ai-header">
+          <span class="ai-badge">✨ AI Powered</span>
+          <h2 class="ai-title">Create Your Custom Elf Name</h2>
+          <p class="ai-subtitle">Describe your character and let AI craft the perfect name</p>
+        </div>
+        <div class="ai-input-container">
+          <textarea 
+            id="aiInput" 
+            class="ai-input" 
+            placeholder="Example: A brave warrior elf with silver hair who protects the ancient forest..."
+            maxlength="500"
+            rows="3"
+            aria-label="Describe your character"
+          ></textarea>
+          <div class="ai-controls">
+            <span class="char-counter"><span id="charCount">0</span>/500</span>
+            <button class="ai-generate-btn" id="aiGenerateBtn" aria-label="Generate name with AI">
+              <span class="btn-icon">🤖</span>
+              <span class="btn-text">Generate with AI</span>
+            </button>
+          </div>
+        </div>
+        <div class="ai-result" id="aiResult" style="display: none;">
+          <div class="ai-result-header">
+            <h3>✨ Your Custom Name</h3>
+            <button class="ai-result-close" id="closeAiResult" aria-label="Close result">×</button>
+          </div>
+          <div class="ai-result-content">
+            <div class="ai-name-display" id="aiNameDisplay"></div>
+            <div class="ai-meaning-display" id="aiMeaningDisplay"></div>
+            <div class="ai-background-display" id="aiBackgroundDisplay"></div>
+          </div>
+          <button class="ai-copy-btn" id="aiCopyBtn">
+            <span>📋 Copy Name</span>
+          </button>
+        </div>
+        <div class="ai-loading" id="aiLoading" style="display: none;">
+          <div class="loader"></div>
+          <p>AI is crafting your unique name...</p>
+        </div>
+      </section>
+
+      <div class="section-divider">
+        <span>OR</span>
+      </div>
+
       <section class="control-panel" aria-label="Name generation controls">
         <div class="style-selector" role="group" aria-label="Select name style">
           <button class="style-btn active" data-style="traditional" aria-pressed="true">
@@ -200,6 +248,7 @@
   </div>
 
   <script src="js/generator.js"></script>
+  <script src="js/ai-generator.js"></script>
   <div style="display: none;">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4M6DPBLFB"></script>

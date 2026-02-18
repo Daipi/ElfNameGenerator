@@ -1,12 +1,27 @@
 # Elf Name Generator
 
+> ⚠️ **部署须知**: 如果要部署到线上，请先阅读 [SOLUTION.md](SOLUTION.md) 了解如何安全地保护 API 密钥！
+
 ## Project Overview
 
 A beautiful elf name generator web application that allows users to choose from different fantasy styles and generate multiple unique elf names with meanings and background stories. Features a modern, clean design with responsive layout optimized for all devices.
 
+## 🚀 Quick Start
+
+### For Users (Just want to use it)
+1. Visit the deployed website
+2. Enter character description or choose a style
+3. Generate names and enjoy!
+
+### For Developers (Want to deploy)
+1. **Read [SOLUTION.md](SOLUTION.md)** - Complete security solution ⭐
+2. **Follow [DEPLOYMENT.md](DEPLOYMENT.md)** - Step-by-step deployment guide
+3. **Run `./security-check.sh`** - Verify security before deployment
+
 ## Features
 
 ### Core Features
+- ✅ **🤖 AI-Powered Generation**: Describe your character, get custom names
 - ✅ **Style Selection**: 6 different elf styles (Traditional Fantasy, Cute, Mystical Magic, Dark Elf, Forest Elf, Xianxia)
 - ✅ **Batch Generation**: Generate 10 names at once for users to choose from
 - ✅ **Name Meanings**: Each name comes with a unique meaning description
